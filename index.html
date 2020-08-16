@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">;
     <title>Coding Quiz</title>
 </head>
 <body>
-    
+    <div>
+        <a href="highscore.html">View Highscore</a>
+    </div>
+    <div class="timer">
+        time <span id="timer">0</span>
+    </div>
+    <div class="start" id="start">
+        <h1>Start the Coding Quiz</h1>
+        <p>Are you ready to start the coding quiz?</p>
+        <button id="startButton">Start Quiz</button>
+    </div>
+    <div class="questions hide" id="questions">
+        <h2 id="questionTitle" class="questionTitle">What is your favorite color?</h2>
+        <div id="choice" class="choice">
+            <button>Blue</button>
+            <button>Red</button>
+            <button>Yellow</button>
+            <button>Green</button>
+        </div>
+    </div>
+    <div class="initials hide" id="initials">
+        <h3>Well Done</h3>
+        <p>Final Score <span id="score">0</span></p>
+        <p>Enter Initials <input type="text"> <button>Submit</button></p>
+    </div>
+    <div class="feedback hide" id="feedback">
+        Correct
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
